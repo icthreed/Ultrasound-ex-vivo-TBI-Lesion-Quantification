@@ -14,8 +14,8 @@ Workflow Overview
   If you don't already have a TPM:
   Run: FiCreateTPM(file, Regions)
 5. Generate Segmentations in 3D Slicer
-  Use 3D Slicer to manually or semi-automatically create brain and TBI lesion segmentations from your NIfTI scan.
-  Save these as .nrrd.seg files.
+  Use 3D Slicer to manually or semi-automatically to 1st, create brain and 2nd, create a TBI lesion segmentation from your NIfTI scan.
+  Save these as a single .nrrd.seg file. 
 6. Apply Segmentations (Medical Imaging Toolbox needed)
   Use: a2_Apply3dSlicerSegmentation
   (Requires nrrdread function)
