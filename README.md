@@ -6,7 +6,7 @@ This project outlines a MATLAB-based workflow for segmenting, mapping, and quant
 Workflow Overview
 1. Download and Prepare Files
   Acquire raw DICOM scan
-2. Convert DICOM to NIfTI
+2. Convert DICOM to NIfTI (Image Processing Toolbox needed)
   Run: FiConvert_dcm2nii(file)
 3. Ensure Alignment with Atlases
   Confirm that all atlases and segmentation volumes are in the same orientation and have a similar number of voxels. Adjust as necessary.
