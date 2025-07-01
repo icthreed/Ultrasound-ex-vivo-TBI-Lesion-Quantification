@@ -16,7 +16,7 @@ Workflow Overview
 5. Generate Segmentations in 3D Slicer
   Use 3D Slicer to manually or semi-automatically create brain and TBI lesion segmentations from your NIfTI scan.
   Save these as .nrrd.seg files.
-6. Apply Segmentations
+6. Apply Segmentations (Medical Imaging Toolbox needed)
   Use: a2_Apply3dSlicerSegmentation
   (Requires nrrdread function)
 7. Map to Atlas Using SPM12
