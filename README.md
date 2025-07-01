@@ -19,7 +19,7 @@ Workflow Overview
 6. Apply Segmentations (Medical Imaging Toolbox needed)
   Use: a2_Apply3dSlicerSegmentation
   (Requires nrrdread function)
-7. Map to Atlas Using SPM12
+7. Map to Atlas Using SPM12 (https://www.fil.ion.ucl.ac.uk/spm/docs/installation/)
   Coregistration (Estimate & Reslice)
     Reference Image: Atlas
     Source Image: LesionANDScan
