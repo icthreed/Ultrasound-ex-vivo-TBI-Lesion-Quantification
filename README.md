@@ -20,22 +20,22 @@ Workflow Overview
   Use: a2_Apply3dSlicerSegmentation
   (Requires nrrdread function)
 7. Map to Atlas Using SPM12 (https://www.fil.ion.ucl.ac.uk/spm/docs/installation/)
-  Coregistration (Estimate & Reslice)
-    Reference Image: Atlas
-    Source Image: LesionANDScan
-    Other Images: Lesion segmentation
-    Separation: 0.1
-    Run batch in SPM12.
-  Normalization (Estimate & Write)
-    Subject to Align: Resliced LesionANDScan
-    Subject to Write: Resliced LesionANDScan and Lesion Segmentation
-    Tissue Probability Map: Your_TPM
-    Separation: 0.1
-    Voxel Size: 0.05 x 0.05 x 0.05
+- Coregistration (Estimate & Reslice)
+-   Reference Image: Atlas
+-   Source Image: LesionANDScan
+-   Other Images: Lesion segmentation
+-   Separation: 0.1
+-   Run batch in SPM12.
+- Normalization (Estimate & Write)
+-   Subject to Align: Resliced LesionANDScan
+-   Subject to Write: Resliced LesionANDScan and Lesion Segmentation
+-   Tissue Probability Map: Your_TPM
+-   Separation: 0.1
+-   Voxel Size: 0.05 x 0.05 x 0.05
     Bounding Box:
     -27.95  -18.95   0  
     -16.6   -11.00  13.15
-8. Quantify Lesion Volume Per Region
+9. Quantify Lesion Volume Per Region
   Run: FiVolumeLostPerRegion
-9. Export and Process Output
+10. Export and Process Output
   Analyze resulting Excel files as needed.
