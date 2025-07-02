@@ -32,9 +32,9 @@ b. Normalization (Estimate & Write)
 - Tissue Probability Map: Your_TPM
 - Separation: 0.1
 - Voxel Size: 0.05 x 0.05 x 0.05
-- Bounding Box:
-    -27.95  -18.95   0  
-    -16.6   -11.00  13.15
+- Bounding Box: (If unknown, slicer to identify boundaries of annotation)
+   -16.6,-11,0
+  -5.2, 3, 13.15
 9. Quantify Lesion Volume Per Region
 - Run: FiVolumeLostPerRegion
 10. Export and Process Output
