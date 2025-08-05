@@ -9,7 +9,7 @@ Workflow Overview
 2. Convert DICOM to NIfTI (Image Processing Toolbox needed)
 - Run: FiConvert_dcm2nii(file)
 3. Ensure Alignment with Atlases
-- Confirm that all atlases and segmentation volumes are in the same orientation and have a similar number of voxels. Adjust as necessary.
+- Confirm that all atlases and segmentation volumes are in the same orientation and have a similar number of voxels. Adjust as necessary. (SPM12: Check Registry)
 4. Create a Tissue Probability Map (TPM)
 - If you don't already have a TPM:
 - Run: FiCreateTPM(file, Regions)
