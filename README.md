@@ -13,7 +13,7 @@ Workflow Overview
 4. Create a Tissue Probability Map (TPM)
 - If you don't already have a TPM:
 - Run: FiCreateTPM(file, Regions)
-5. Generate Segmentations in 3D Slicer
+5. Generate Segmentations in 3D Slicer (https://www.slicer.org/)
 - Use 3D Slicer to manually or semi-automatically to 1st, create brain and 2nd, create a TBI lesion segmentation from your NIfTI scan.
 - Save these as a single .nrrd.seg file. 
 6. Apply Segmentations (Medical Imaging Toolbox needed)
