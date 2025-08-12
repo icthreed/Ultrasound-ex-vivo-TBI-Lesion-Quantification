@@ -1,10 +1,9 @@
-function Xnew=FiConvert_dcm2nii(U)
+%function Xnew=FiConvert_dcm2nii(U)
 %Example, U is a dicom file
-% [U,Ud]=uigetfile('*.dcm', 'Select dicom');
-% U=fullfile(Ud,U);
+[U,Ud]=uigetfile('*.dcm', 'Select dicom');
 
+U=fullfile(Ud,U);
 X = dicomread(U);
-
 %USU Collaboration
 %Xnew=X(:,:,1,:)+X(:,:,2,:)+X(:,:,3,:);
 
@@ -59,4 +58,5 @@ Info.raw.pixdim(4)=zDim;
 
 
 niftiwrite(Xnew,newStr,Info);
+
 
