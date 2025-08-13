@@ -11,7 +11,8 @@ Workflow Overview
 3. Ensure Alignment with Atlases
 - Confirm that all atlases and segmentation volumes are in the same orientation and have a similar number of voxels. (Alases provided in .zip folder, Use SPM12: Check Registry). If flipped anterior/posterior, use alternate atlas or adjust manually. 
 4. Create a Tissue Probability Map (TPM)
-- TPM built into SPM12 is for humans, so you likely need to make your own or use the premade one in the .zip folder EXAMPLE:(TPMfinal_ant.nii) 
+- TPM built into SPM12 is for humans, Alternate TPM is likely needed
+- Premade TPMs stored in .zip folders EXAMPLE:(TPMfinal_ant.nii) 
 - To make your own, Run: FiCreateTPM (Select the standard annotation file EXAMPLE:(AntP56_Annotation_downsample2.nii), select Regions EXAMPLE:(downsample_ScalableBrainAtlasStructures.xlsx))
 - Output: TPMFinal.nii
 5. Generate Segmentations in 3D Slicer (https://www.slicer.org/)
