@@ -1,6 +1,3 @@
-clear all; close all; clc
-%Applying 3d slicer segmentation
-
 %Select segmentation
 [segmentFile, segmentFileD]= uigetfile('*.nii; *.nrrd', 'Select segmentation');
 segmentFile=fullfile(segmentFileD,segmentFile);
@@ -168,3 +165,4 @@ for iii=1:length(UltrasoundFileO)
             niftiwrite(Lesion,NewName,UltrasoundInfo);
         end
 end
+
