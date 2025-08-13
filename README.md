@@ -13,7 +13,8 @@ Workflow Overview
 4. Create a Tissue Probability Map (TPM)
 - TPM built into SPM12 is for humans, Alternate TPM is likely needed
 - Premade TPMs stored in .zip folders EXAMPLE:(TPMfinal_ant.nii) 
-- To make your own, Run: FiCreateTPM (Select the standard annotation file EXAMPLE:(AntP56_Annotation_downsample2.nii), select Regions EXAMPLE:(downsample_ScalableBrainAtlasStructures.xlsx))
+- To make your own,
+     - Run: FiCreateTPM (Select the standard annotation file EXAMPLE:(AntP56_Annotation_downsample2.nii), select Regions EXAMPLE:(downsample_ScalableBrainAtlasStructures.xlsx))
 - Output: TPMFinal.nii
 5. Generate Segmentations in 3D Slicer (https://www.slicer.org/)
 - Use 3D Slicer to segment brain manually or semi-automatically (Detailed Instructions: 3D Slicer Segmentation.docx)
