@@ -14,7 +14,7 @@ Workflow Overview
 - TPM built into SPM12 is for humans, so you likely need to make your own or use the premade one in the .zip folder EXAMPLE:(TPMfinal_ant.nii) 
 - To make your own, Run: FiCreateTPM (Select the standard annotation file EXAMPLE:(AntP56_Annotation_downsample2.nii), select Regions EXAMPLE:(downsample_ScalableBrainAtlasStructures.xlsx))
 5. Generate Segmentations in 3D Slicer (https://www.slicer.org/)
-- Use 3D Slicer to manually or semi-automatically to 1st, create brain and 2nd, create a TBI lesion segmentation from your NIfTI scan.
+- Use 3D Slicer to segment brain manually or semi-automatically (Detailed Instructions: 3D Slicer Segmentation.docx)
 - Save these as a single .nrrd.seg file. 
 6. Apply Segmentations (Medical Imaging Toolbox needed)
 - Run: a2_Apply3dSlicerSegmentation (Select Segmentation, select Scan)
