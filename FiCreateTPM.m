@@ -1,10 +1,6 @@
 %Create TPM
 
 %function TPM=FiCreateTPM(AnnotationFile,Regions)
-
-
-%%%%%If you need to run/test this use these:
-clear all; close all; clc
 [AnnotationFile,AnnotationFileD]=uigetfile('*.nii', 'Select Nifti'); 
 AnnotationFile=fullfile(AnnotationFileD,AnnotationFile);
 
@@ -109,6 +105,7 @@ infoNew.raw.pixdim(5)=info0.raw.pixdim(5);
 % % % info0.raw.srow_z=info.raw.srow_z;
 
 niftiwrite(uint16(TPM),'TPMfinal',infoNew);
+
 
 
 
