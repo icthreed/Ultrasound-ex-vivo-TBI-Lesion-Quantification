@@ -13,12 +13,14 @@ Workflow Overview
 4. Create a Tissue Probability Map (TPM)
 - TPM built into SPM12 is for humans, so you likely need to make your own or use the premade one in the .zip folder EXAMPLE:(TPMfinal_ant.nii) 
 - To make your own, Run: FiCreateTPM (Select the standard annotation file EXAMPLE:(AntP56_Annotation_downsample2.nii), select Regions EXAMPLE:(downsample_ScalableBrainAtlasStructures.xlsx))
+- Output: TPMFinal.nii
 5. Generate Segmentations in 3D Slicer (https://www.slicer.org/)
 - Use 3D Slicer to segment brain manually or semi-automatically (Detailed Instructions: 3D Slicer Segmentation.docx)
 - Save these as a single .nrrd.seg file. 
 6. Apply Segmentations (Medical Imaging Toolbox needed)
 - Run: a2_Apply3dSlicerSegmentation (Select Segmentation, select Scan)
 - (Requires nrrdread function)
+- Output: LesionANDScan.nii, LesionSegmentation.nii
 7. Map to Atlas Using SPM12 (https://www.fil.ion.ucl.ac.uk/spm/docs/installation/)
 
    a. Coregistration (Estimate & Reslice)  
@@ -27,6 +29,7 @@ Workflow Overview
       - Other Images: Lesion segmentation, Original .nii Scan  
       - Separation: 0.1  
       - Run batch in SPM12.
+      - Output: r_______.nii
 
    b. Normalization (Estimate & Write)  
       - Subject to Align / Image to Align: Resliced LesionANDScan  
@@ -37,7 +40,9 @@ Workflow Overview
       - Bounding Box: (If unknown, slicer to identify boundaries of annotation)  
          -16.6,-11,0  
          -5.2, 3, 13.15
+      - Output: wr________.nii
 9. Quantify Lesion Volume Per Region
 - Run: FiVolumeLostPerRegion (Select Normalized Lesion Segmentation, Select .xlsx)
+- Output: ______RegionLoss.xls
 10. Export and Process Output
 - Analyze resulting Excel files as needed.
