@@ -20,12 +20,14 @@ Workflow Overview
 - Run: a2_Apply3dSlicerSegmentation (Select Segmentation, select Scan)
 - (Requires nrrdread function)
 7. Map to Atlas Using SPM12 (https://www.fil.ion.ucl.ac.uk/spm/docs/installation/)
+  
 a. Coregistration (Estimate & Reslice)
 - Reference Image: Atlas
 - Source Image: LesionANDScan
 - Other Images: Lesion segmentation
 - Separation: 0.1
 - Run batch in SPM12.
+  
 b. Normalization (Estimate & Write)
 - Subject to Align: Resliced LesionANDScan
 - Subject to Write: Resliced LesionANDScan and Lesion Segmentation
