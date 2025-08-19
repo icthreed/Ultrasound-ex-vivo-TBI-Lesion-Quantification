@@ -18,7 +18,7 @@ Workflow Overview
      - (Select the standard annotation file EXAMPLE:(AntP56_Annotation_downsample2.nii), select Regions EXAMPLE:(downsample_ScalableBrainAtlasStructures.xlsx))
 - Output: TPMFinal.nii
 5. Generate Segmentations in 3D Slicer (https://www.slicer.org/)
-- Use 3D Slicer to segment brain manually or semi-automatically (Detailed Instructions: 3D Slicer Segmentation.docx)
+- Use 3D Slicer to segment brain manually or semi-automatically (Detailed Instructions: 3D Slicer Instructions.pdf)
 - Save these as a single .nrrd.seg file. 
 6. Apply Segmentations (Medical Imaging Toolbox needed)
 - Run: a2_Apply3dSlicerSegmentation (Select Segmentation, select Scan)
